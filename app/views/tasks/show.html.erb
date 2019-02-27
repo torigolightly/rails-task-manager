@@ -1,0 +1,26 @@
+<div class=out>
+
+  <h1><%= @task.title  %></h1>
+
+  <div class=in>
+    <p><%= @task.details %></p>
+  </div>
+
+  <% if @task.completed %>
+    <i class="fas fa-heart"></i> Task is completed! <i class="fas fa-heart"></i>
+    <% else %>
+    <i class="far fa-heart"></i> Still to be done, darling! <i class="far fa-heart"></i>
+  <% end %>
+
+  <div class="in">
+    <i class="fas fa-pencil-alt"></i><%= link_to "Edit this task", edit_path %>
+  </div>
+
+   <div class="in">
+    <p> <%= link_to "Go back to your list", tasks_path %> </p>
+  </div>
+
+</div>
+
+
+

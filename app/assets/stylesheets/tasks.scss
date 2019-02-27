@@ -1,0 +1,25 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: josefin sans;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.out {
+  margin: auto;
+  text-align: center;
+}
+
+.in {
+  border: 2px solid #a5f2e7;
+  border-radius: 5px;
+  margin: 50px 600px;
+  text-align: center;
+}

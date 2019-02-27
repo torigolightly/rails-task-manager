@@ -1,0 +1,25 @@
+<div class=out>
+  <h1>Do all things with love</h1>
+  <div class=in>
+    <ul>
+    <% @tasks.each do |task| %>
+    <li> <% if task.completed %>
+      <i class="fas fa-heart"></i>
+      <% else %>
+      <i class="far fa-heart"></i>
+      <% end %>
+      <%= link_to task.title, task_path(task.id) %> </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="in">
+    <p> <%= link_to "Add a new task here", new_task_path %> </p>
+  </div>
+</div>
+
+
+
+
+
+
+
